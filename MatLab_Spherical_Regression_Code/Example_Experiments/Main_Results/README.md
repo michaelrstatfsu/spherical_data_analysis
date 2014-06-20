@@ -19,8 +19,8 @@ The functions which build the model all take the same first two arguments X,Y wh
 
 * PARAMETRIC MODELS
     * Projective Linear Transformation   
-        * [A,e,Xtilde,path,A\_store]= PLT_NR(X,Y,noreflect)
-            * A is the MxM transformation matrix in SL(M) which parametrizes the projective linear transformation. The MLE for the true transformation matrix is computed using an intrinsic Newton-Raphson algorithm.
+        * **[A,e,Xtilde,path,A\_store]= PLT_NR(X,Y,noreflect)**
+            * **A** is the MxM transformation matrix in SL(M) which parametrizes the projective linear transformation. The MLE for the true transformation matrix is computed using an intrinsic Newton-Raphson algorithm.
             * Xtilde is MxN matrix whose columns represent the predicted values of Y given X.
             * path is an matrix which stores the iterative path on the sphere as the Xtildes are updated in the algorithm. When M=3, this variable can be passed into the third argument of the Display_Path function to plot the algorithms convergence on the sphere.
         * [Ahat,e,Xtilde,path]= PLT\_GA(X,Y)
