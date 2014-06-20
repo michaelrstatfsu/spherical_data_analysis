@@ -17,14 +17,18 @@ MAIN_Spherical_Regression_Analysis
 
 The diffeomorphic regression models have been run in advanced because they take time to tune and fit. The main model fitting functions are:
 * PARAMETRIC MODELS
-    * PLT
-    * RRR
-    * LLR
+    * Projective Linear Transformation   
+        * [A,e,Xtilde,path,A_store]= PLT_NR(X,Y,noreflect)
+        * [Ahat,e,Xtilde,path]= PLT_GA(X,Y)
+    * Rigid Rotation and Reflection
+        * [Ahat,e,Yhat]=RRR(X,Y,noreflect)
+    * Parametric Log Linear Regression
+        * [Ahat,e,Yhat,Ynew]=LLR(X,Y,Xnew)
 * NONPARAMETRIC MEODELS
-    * [Grid2,E,Xtilde,path] = NPSR(X,Y,lambda,l,NN)
-    
-The NPSR function currently only applies to the case where M=3, i.e. for data on $\mathbb{S}^2$. All the other functions work for arbitrary 
-    * [m] = LocalLR(X,Y,Xnew,kappa)
+    * Diffeomorphic Spherical Regression
+        * [Grid2,E,Xtilde,path] = NPSR(X,Y,lambda,l,NN)
+    * Local Linear Regression
+        * [m] = LocalLR(X,Y,Xnew,kappa)
 
 
 
