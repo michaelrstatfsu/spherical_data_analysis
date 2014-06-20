@@ -22,6 +22,7 @@ The diffeomorphic regression models have been run in advanced because they take 
     * LLR
 * NONPARAMETRIC MEODELS
     * [Grid2,E,Xtilde,path] = NPSR(X,Y,lambda,l,NN)
+    
 The NPSR function currently only applies to the case where M=3, i.e. for data on $\mathbb{S}^2$. All the other functions work for arbitrary 
     * [m] = LocalLR(X,Y,Xnew,kappa)
 
