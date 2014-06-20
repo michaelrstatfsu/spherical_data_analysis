@@ -1,0 +1,12 @@
+This Module contains examples of converting pixles from cylindical maps into cartesian coordinates.
+
+The main function is called pix2geo.m
+
+There are three examples which demonstrate how to use the pix2geo function. You should have a directory containing the following maps in Matlab's search path in order to run this experiment.
+
+earth_800.jpg
+earth_400.jpg
+clouds_9_05_12.jpg
+clouds_9_04_12.jpg
+
+One way to do this is to add the Spherical_Regression_Library directory and its subdirectories to the search path.

@@ -1,0 +1,12 @@
+This module reads data from wiimotes using python-cwiid package
+
+For more information on python-cwiid see
+http://abstrakraft.org/cwiid/
+http://talk.maemo.org/showthread.php?t=60178
+https://github.com/abstrakraft/cwiid
+
+The wiireader.py script also depends on the python time package. Make sure these packages are installed before using this module.
+
+The wiireader.py script records the state of the left and right wiimote at 100 timepoints. Run this script in terminal and it will prompt the user to sync the wiimotes.
+
+The wiimote.m function converts the raw output into cartesian coordinates.

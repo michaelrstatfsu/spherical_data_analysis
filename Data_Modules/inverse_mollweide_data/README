@@ -1,0 +1,7 @@
+This Module Converts pixles from Mollweide maps into cartesian coordinates.
+
+The main function is called inverse_mollweide.m
+
+The ssec_example.m script is a data example using composit a cloud map from
+http://www.ssec.wisc.edu/
+

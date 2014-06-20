@@ -1,0 +1,4 @@
+Magsat data and its documentation can be found at 
+ftp://spdf.gsfc.nasa.gov/pub/data/magsat/
+It is suggest that you save the files from this site before running
+Collect_magsat_data which will take 15 observations from the each of the first 10 days of available data and combine the data into a data set.

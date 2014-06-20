@@ -1,0 +1,4 @@
+This module reads radiosonde data from
+http://www.ncdc.noaa.gov/oa/climate/igra/
+
+The balloonreader.m function reads raw data from igra into matlab.

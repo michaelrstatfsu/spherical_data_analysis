@@ -1,0 +1,91 @@
+                               
+                    MAGSAT MAGNETIC FIELD DATA
+                            
+                           INTRODUCTION
+                                                      
+ This directory contains half-second resolution magnetic field vectors from
+ NASA's MAGSAT spacecraft (300-600 km altitude, 90 deg inclination) taken
+ between November 2, 1979 and May 6,1980. 
+                              
+                    DESCRIPTION OF THE DATA          
+                                
+  The MAGSAT project objectives were:
+  - to obtain accurate vector measurements of the near-Earth geomagnetic 
+     field;
+  - to use those measurements to identify and model the main (core) and 
+    crustal fields;
+  - to study of fields from external sources.       
+                                  
+                                                                     
+  The data consist of position data for the MAGSAT spacecraft,
+  and 0.5 s  resolution  observations from the MAGSAT triaxial fluxgate
+  magnetometer (Dr. Robert A. Langel,  NASA/GSFC,  Principal  Investigator).
+  These data have been extracted from the original 1/16-second CHRONFIN data
+  tapes archived at the NSSDC. The geomagnetic field data are given as
+  Cartesian components in a NEV (North, East, Vertical) geocentric spherical 
+  coordinate system. In this system, the  V component is positive directly
+  towards the Earth's center. The N and E components are positive northward
+  and eastward. The N and V components  are  defined  relative to geocentric
+  circles, and not relative to geodetic ellipsoids relative to which ground-
+  observatory-measured geomagnetic BX, BY, and BZ are defined. Use of `BX,BY
+  BZ' in this documentation refer to  BN, BE, BV, and not to the (BX,BY,BZ)
+  defined relative to an ellipsoid. Spacecraft position data are also given
+  relative to a geocentric spherical system rather than to ellipsoidal
+  coordinates. See [1] for a discussion of the differencies between the
+  coordinate systems as applied to field data and spacecraft position data
+  (also see below), and for a discussion of MAGSAT data and of the
+  International Geomagnetic Reference Field.
+
+  Fluxgate magnetometers are subject to drift, although inflight calibration
+  with the MAGSAT cesium scalar magnetometer largely compensated for these
+  drifts. Spacecraft attitude was measured with a combination of star
+  trackers and sun sensor. Small shifts in attitude are detectible during
+  the field modeling  process. Afte inflight calibration, the vector
+  measurements are thought to be accurate to a 1-sigma value of 3 nT. Users
+  of the data should note that because of imperfect calibration of the
+  attitude determination system, there are numerous small jumps in the
+  component data (not in the corresponding magnitude data). The MAGSAT
+  position accuracy is believed to be 60  meters radially and 300 meters
+  horizontally. Note that MAGSAT moved at about 8 km/s in its orbit. 
+                  
+            
+                              
+                                            
+                             MAGSAT FORMAT
+                                     
+  Logical record: 64 bytes + CR/LF for ASCII files.
+                                                  
+  ==========================================================================
+    Item   Description        Binary  ASCII     Units           Notes    
+  ==========================================================================
+   1   Milliseconds of day      I*4    I8      millisec     
+   2   LAMBDA Geocentric        R*4   F8.3     degree     -90.000 -  90.000 
+       latitude of spacecraft
+   3   PHI Geocentric           R*4   F8.3     degree    -180.000 - 180.000 
+       longitude of spacecraft
+   4   R Radial distance        R*4   F9.3         km          6670 - 7000 
+       from center of the 
+       Earth to spacecraft
+   5   BX Geocentric            R*4   F8.1         nT
+       North component
+       of magnetic field
+   6   BY Geocentric            R*4   F8.1         nT 
+       East component       
+       of magnetic field
+   7   BZ Geocentric            R*4   F8.1         nT 
+       vertical component
+       of magnetic field
+   8   Atitude processing       I*4   I5                    
+       flag [2]
+  ==========================================================================
+                                          
+
+                              REFERENCES 
+                                                
+  1. R. A. Langel, International  Geomagnetic  Reference  Field:  The  Sixth 
+     Generation, J. Geomag. Geoelectr, 44, 699-702, 1992.
+  2. R. Langel, J.Berbert, T.Jennings, and R.Horner, Magsat data processing: 
+     a report for investigators, NASA  Technical  Memorandum 82160, November 
+     1981, GSFC (Available from NSSDC). 
+                                         
+                                                                                             

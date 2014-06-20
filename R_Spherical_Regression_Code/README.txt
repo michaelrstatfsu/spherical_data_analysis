@@ -1,0 +1,5 @@
+I think that this important that spherical regression tools be written on an open platform so that everyone has access to them. I had been hesitant to commit myself to that task as I was not certain if R had sufficient plotting tools for the task. After working with the RGL package I am happy to announce that I was able to get most of the plotting functionality that I get from Matlab into an R environment. The only thing that I am missing are the texture maps on the quad-meshes. I consider this a minor inconvenience as the texture maps are mainly for display purposes. There certainly is some practical benefit to having this functionality, however the more important plotting tools seem to be ready for use.
+
+I have written a number of plotting functions utilizing the rgl package which make a more 'Matlab-like' plotting environment. These functions are defined in the plottingfunctions.R script. A tutorial with some examples can be seen in the testimage.R script.
+
+Slowly I will begin adding the core functions needed for the analysis to this repository. My plan is to add the needed tools and then add an object oriented environment similar to common R packages.
