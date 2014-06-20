@@ -1,4 +1,4 @@
-function [ m] = LocalLR( X,Y,Xnew,kappa)
+function [ m] = local_linear( X,Y,Xnew,kappa)
 if ~exist('kappa','var')
     kappa=40;
 end

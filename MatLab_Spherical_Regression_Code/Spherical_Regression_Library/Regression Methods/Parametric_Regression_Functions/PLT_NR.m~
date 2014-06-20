@@ -12,7 +12,7 @@
 % Xtilde is the predicted value of Y given X
 %
 % path shows the iterative updates of Xtilde and can be plotted using the Display_Path.m function.
-function [A,e,Xtilde,path]= PLT_NR(X,Y)
+function [A,e,Xtilde,path,A_store]= PLT_NR(X,Y)
 path_index=1;
 ind=1;
 [M,N]=size(Y);
