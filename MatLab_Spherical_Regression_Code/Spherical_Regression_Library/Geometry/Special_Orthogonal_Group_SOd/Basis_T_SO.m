@@ -1,4 +1,13 @@
 
+%% Basis for the Tangent space at A in SO(d)
+% This function constructs an orthonormal basis for the tangent space
+% at A in the group of Special Orthogonal dXd Matrices.
+%
+% A should be a dXd orthogonal matrix with determinant 1. If no argument is provided,
+% an orthonormal basis is constructed at the identity matrix.
+%
+% EA is a dxdx(d*(d-1)/2) double where the third component indexes the indivual
+% Basis elements.
 function [EA] = Basis_T_SO(A)
 [d,~]=size(A);
 ind=1;
