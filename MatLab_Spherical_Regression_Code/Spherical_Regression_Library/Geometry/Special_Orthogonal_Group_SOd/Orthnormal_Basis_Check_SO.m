@@ -1,5 +1,8 @@
+% this is a small script which checks that an orthonormal
+% basis is constructed for the tangent spaces of randomly
+% generated special orthogonal matrices.
 clear
-d=10;
+d=10; % dimension of the Matrix
 for i=1:100
 A= SO_generator(d);
 % A=eye(3);
