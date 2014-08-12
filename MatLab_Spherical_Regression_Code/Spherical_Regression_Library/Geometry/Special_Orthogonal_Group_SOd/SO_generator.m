@@ -1,3 +1,8 @@
+%% Randomly Generate a dXd Special Orthogonal Matrix
+% 
+% d denotes the number of rows and columns of the square 
+% orthogonal matrix. If no argument is provided, d defualts
+% to 3
 function A0=SO_generator(d)
 if ~exist('d','var')
     d=3
