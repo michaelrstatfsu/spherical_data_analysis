@@ -1,4 +1,5 @@
-%% Generate $A_0\in SL(d)$
+%% Generates a random $A_0\in SL(d)$
+% d should be an a positive integer greater than 1. This specifies the size of the sqare matrix.
 function A0=A0_generator(d)
 %% if dimension d is not specified, set default d=3
 if ~exist('d','var')
